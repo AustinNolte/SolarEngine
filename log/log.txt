@@ -1,0 +1,1 @@
+[37m[INFO] Succcessfully initialized logger with log_file[0m
