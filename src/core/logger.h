@@ -1,4 +1,5 @@
 #pragma once
+#include "globals.h"
 #include <stdbool.h>
 #include <stdio.h>
 
@@ -17,6 +18,6 @@ typedef enum {
 	LOG_FATAL,
 } LOG_LEVEL;
 
-void logging(LOG_LEVEL level, const char *txt);
-bool initialize_logger(FILE *file);
+void S_LOG(LOG_LEVEL level, const char *txt);
+void initialize_logger();
 void uninitalize_logger();

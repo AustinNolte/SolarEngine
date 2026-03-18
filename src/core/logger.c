@@ -29,7 +29,7 @@ static void log_fatal(const char *txt) {
 	exit(EXIT_FAILURE);
 }
 
-void logging(LOG_LEVEL level, const char *txt) {
+void S_LOG(LOG_LEVEL level, const char *txt) {
 	switch (level) {
 	case LOG_INFO:
 		log_info(txt);
@@ -52,18 +52,17 @@ void logging(LOG_LEVEL level, const char *txt) {
 	}
 }
 
-bool initialize_logger(FILE *file) {
+void initialize_logger() {
+	FILE *file = fopen(LOG_FILE_LOCATION, "a");
 	if (!file) {
-		return false;
+		char message[256];
+		sprintf(message, "failed to open the file at location: %s",
+				LOG_FILE_LOCATION);
+		perror(message);
+		exit(EXIT_FAILURE);
 	}
-
 	log_file = file;
-
-	if (!log_file) {
-		return false;
-	}
-
-	return true;
+	S_LOG(LOG_INFO, "Succcessfully initialized logger with log_file");
 }
 
 void uninitalize_logger() {
