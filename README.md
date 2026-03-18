@@ -22,7 +22,7 @@ I am currently developing this on linux, specifically omarchy. *where my omarchy
 
 Because I am still learning a lot about how this will work out, this list is not exhaustive and will need to be updated, as of the initial commit my TODO will be very high level and abstract.
 
-- [ ] Logging/Asserstions
+- [x] Logging/Asserstions
 - [ ] Window/Platform layer using GLFW
 - [ ] Input handling - Keyboard mouse specific
 - [ ] Main Loop + timing

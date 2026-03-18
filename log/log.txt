@@ -1,0 +1,6 @@
+[37m[INFO] Succcessfully initialized logger with log_file[0m
+[37m[INFO] Succcessfully initialized logger with log_file[0m
+[37m[INFO] Succcessfully initialized logger with log_file[0m
+[37m[INFO] Succcessfully initialized logger with log_file[0m
+[37m[INFO] Succcessfully initialized logger with log_file[0m
+[37m[INFO] Succcessfully initialized logger with log_file[0m
