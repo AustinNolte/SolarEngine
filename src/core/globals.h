@@ -5,4 +5,4 @@
 
 #pragma once
 
-#define LOG_FILE_LOCATION "logs/log.txt"
+#define LOG_FILE_LOCATION "log/log.txt"

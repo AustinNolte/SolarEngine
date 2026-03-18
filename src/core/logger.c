@@ -1,4 +1,5 @@
 #include "logger.h"
+#include "asserts.h"
 #include <stdlib.h>
 
 FILE *log_file = 0;
@@ -56,8 +57,7 @@ void initialize_logger() {
 	FILE *file = fopen(LOG_FILE_LOCATION, "a");
 	if (!file) {
 		char message[256];
-		sprintf(message, "failed to open the file at location: %s",
-				LOG_FILE_LOCATION);
+		sprintf(message, "failed to open the file at location: %s\n", LOG_FILE_LOCATION);
 		perror(message);
 		exit(EXIT_FAILURE);
 	}
